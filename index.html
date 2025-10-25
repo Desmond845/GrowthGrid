@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WJFQ8DB381"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WJFQ8DB381");
+    </script>
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- === ESSENTIAL SEO META TAGS === -->
+    <title>GrowthGrid - Your Personal Growth Tracking & Progress Journal</title>
+    <meta name="description" content="Track your personal growth, build better habits, reflect on your growth, and achieve your goals with GrowthGrid. Free daily journal for productivity, mental health, and self-improvement.">
+    <meta name="keywords" content="personal growth, habit tracker, progress journal, self improvement, daily journal, goal tracking, productivity app, mental health journal, growth, growthgrid, GrowthGrid, personal growth tracker, self-improvement, mental-health">
+    <meta name="author" content="GrowthGrid">
+    
+    <!-- === OPEN GRAPH (Social Media) === -->
+    <meta property="og:title" content="GrowthGrid - Track Your Personal Growth Journey">
+    <meta property="og:description" content="Free personal growth tracking app. Journal your progress, build habits, reflect on your growth, and achieve your goals daily.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://desmond845.github.io/GrowthGrid/">
+    <meta property="og:image" content="https://desmond845.github.io/GrowthGrid/img.png">
+    <meta property="og:site_name" content="CipherX"/>
+<meta name="application-name" content="CipherX">
+    <meta property="og:image:width" content="1200">
+     <meta property="og:image:height" content="630">
+    <!-- === TWITTER CARD === -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GrowthGrid - Personal Growth Tracker">
+    <meta name="twitter:description" content="Track your daily progress and build better habits with GrowthGrid.">
+    <meta name="twitter:image" content="https://desmond845.github.io/GrowthGrid/img.png">
+    <!-- === FAVICON === -->
+    <link rel="icon" type="image/x-icon" href="img.png"> 
+    <!-- === CANONICAL URL === -->
+    <link rel="canonical" href="https://desmond845.github.io/GrowthGrid">
+    <meta name="theme-color" content="#00f0ff">
+  <meta name="msapplication-TileColor" content="#00f0ff">
+  <!-- Important for SEO -->
+  <meta name="robots" content="index, follow">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="personalization">
+    <section class="card" id="personalPage" data-animate="scale">
+        <h1 data-animate="up" data-stagger="1">Welcome to GrowthGrid</h1>
+        <h3 id="personal-Mq" data-animate="up" data-stagger="2">Let's Personalize your journey</h3>
+        <div data-animate="up" data-stagger="3">
+            <input id="firstName" placeholder="What's your name?">
+        </div>
+        <button onclick="startApp()" data-animate="up" data-stagger="4">Let's go</button>
+    </section>
+    <!-- App Dashboard (initially hidden) -->
+    <section class="dashboard" id="appDashBoard" data-animate="">
+        <!-- Header -->
+        <header class="app-header" data-animate="down">
+            <div class="header-content">
+                <h1 data-animate="left">GrowthGrid</h1>
+                <div class="user-welcome" data-animate="right">
+                    <span id="greeting">Good Afternoon</span>
+                </div>
+            </div>
+        </header>
+        <!-- <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg> -->
+        <main class="app-main">
+            <section class="aspects-section">
+                <div class="section-header" data-animate="up">
+                    <h3 id="dashboard-Mq"></h3>
+                    <span id="welcomeName">Welcome User!</span>
+                    <div style="position: relative; display: flex; flex-direction: row; justify-content: space-between; align-items: center;">
+                        <h2>Your Growth Areas    
+                        </h2>
+                        <span class="no-aspects" id="aspectCounter">(0)</span>
+                    </div>
+                </div>
+                <div class="aspects-grid" id="aspectsGrid">
+                    <div id="aspectDiv"></div>
+                    <!-- Aspects will appear here dynamically -->
+            </section>
+            </div>
+            </div>
+    </section>
+    </main>
+    <button id="addEntry" class="add-entry" onclick="showAddAspectPrompt()">
+        +
+    </button>
+
+
+    </section>
+
+    <script src="script.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "GrowthGrid",
+      "description": "Personal growth tracking and progress journal application",
+      "url": "https://desmond845.github.io/GrowthGrid/",
+      "logo": https://desmond845.github.io/GrowthGrid/img.png,
+      "applicationCategory": "ProductivityApplication",
+      "operatingSystem": "Web Browser",
+      "permissions": "browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Desmond"
+      },
+      "featureList": [
+        "Daily progress tracking", 
+        "Habit formation", 
+        "Goal setting",
+        "Personalized"
+        "Personal journal",
+        "Data export",
+        "Mobile optimised interface",
+        "Instant sharing"
+      ]
+    }
+    </script>
+
+</body>
+
+</html>
