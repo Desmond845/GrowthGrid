@@ -967,12 +967,9 @@ body.app {
   background: #f0f4ff;
 }
 .no-aspects {
-  /* background-color: #667eea; */
   border-radius: 50%;
-  /* padding: 3px; */
   color: #cbd;
   text-align: center;
-
   font-size: 26px;
   font-weight: bolder;
   width: 40px;
