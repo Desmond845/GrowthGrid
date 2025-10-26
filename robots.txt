@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /nonexistent/
 
-Sitemap: https://desmond845/GrowthGrid/sitemap.xml
+Sitemap: https://desmond845.github.io/GrowthGrid/sitemap.xml
