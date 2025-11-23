@@ -1,0 +1,22 @@
+{
+  "name": "GrowthGrid",
+  "short_name": "GrowthGrid",
+  "description": "Track your personal growth, habits, and streaks",
+  "start_url": "/GrowthGrid/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#00f0ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "img.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

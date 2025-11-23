@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://desmond845.github.io/GrowthGrid/sitemap.xml
