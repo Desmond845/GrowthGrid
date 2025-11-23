@@ -2166,7 +2166,7 @@ setInterval(() => {
     // 50% chance
     toast.info(
       `Try <a href="https://desmond845.github.io/CipherX/" target="_blank">CipherX</a> — encrypt like a pro!`,
-      "8000"
+      "5000"
     );
   }
 }, 3 * 60 * 1000); // 3 min
