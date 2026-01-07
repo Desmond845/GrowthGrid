@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+Allow: /index.html
+Allow: /style.css
+Allow: /script.js
+Allow: /manifest.json
+Disallow: /app.html  # Don't crawl app page directly
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /test/
+
+# Crawl-delay for free hosting
+Crawl-delay: 1
+
+# Sitemaps
+Sitemap: https://desmond845.github.io/GrowthGrid/sitemap.xml
+
+# Special rules for bots
+User-agent: Googlebot
+Allow: /app.html  # Let Google see it for PWA discovery
+Crawl-delay: 2
+
+User-agent: Bingbot
+Allow: /app.html
+Crawl-delay: 2

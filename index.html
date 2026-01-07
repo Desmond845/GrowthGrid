@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-WJFQ8DB381"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-WJFQ8DB381");
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="jZUs_hxj2fw_o0OvJedz0MaOTvUk5OY2ZSez7es_0PI"
+    />
+
+    <!-- === ESSENTIAL SEO META TAGS === -->
+    <title>GrowthGrid - Your Personal Growth Tracking & Progress Journal</title>
+    <meta
+      name="description"
+      content="Track your personal growth, build better habits, reflect on your growth, and achieve your goals with GrowthGrid. Free daily journal for productivity, mental health, and self-improvement."
+    />
+    <meta
+      name="keywords"
+      content="personal growth, habit tracker, progress journal, self improvement, daily journal, goal tracking, productivity app, mental health journal, growth, growthgrid, GrowthGrid, personal growth tracker, self-improvement, mental-health"
+    />
+    <meta
+      name="keywords"
+      content="habit tracker app, free habit tracker, goal tracker, streak counter, mood logger, productivity app, offline PWA, daily journal, growth journal, habit building app"
+    />
+    <meta name="author" content="GrowthGrid" />
+    <meta
+      name="description"
+      content="Track habits, set goals, and see real growth with AI insights, streaks, and mood logging. Free PWA - works offline. Start your journey today!"
+    />
+
+    <!-- === OPEN GRAPH (Social Media) === -->
+    <meta
+      property="og:title"
+      content="GrowthGrid - Track Your Personal Growth Journey"
+    />
+    <meta
+      property="og:description"
+      content="Real-time habit tracking with streaks, mood graphs, and AI insights. Offline PWA for iOS/Android/Web. Start growing today!"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://desmond845.github.io/GrowthGrid/"
+    />
+    <meta
+      property="og:image"
+      content="https://desmond845.github.io/GrowthGrid/img.png"
+    />
+    <meta property="og:site_name" content="GrowthGrid" />
+    <meta name="application-name" content="GrowthGrid" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <!-- === TWITTER CARD === -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="GrowthGrid - Free Habit Tracker with Streaks & AI"
+    />
+    <meta
+      name="twitter:description"
+      content="Track habits, moods, and progress offline. Build streaks and get insights. Free PWA app!"
+    />
+
+    <meta
+      name="twitter:image"
+      content="https://desmond845.github.io/GrowthGrid/img.png"
+    />
+    <!-- === FAVICON === -->
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image" href="img.png" />
+    <!-- === CANONICAL URL === -->
+    <link rel="canonical" href="https://desmond845.github.io/GrowthGrid" />
+    <meta name="theme-color" content="#00f0ff" />
+    <meta name="msapplication-TileColor" content="#00f0ff" />
+    <!-- Important for SEO -->
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Structured Data for Rich Snippets -->
+    <meta name="application-name" content="GrowthGrid" />
+    <meta name="apple-mobile-web-app-title" content="GrowthGrid" />
+    <meta
+      name="msapplication-tooltip"
+      content="GrowthGrid - Personal Growth Tracker"
+    />
+
+    <!-- For App Store Optimization -->
+    <meta name="apple-itunes-app" content="app-id=, app-argument=" />
+    <meta name="google-play-app" content="app-id=" />
+
+    <!-- Content Security -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+
+    <!-- Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- PWA Manifest -->
+    <link
+      rel="manifest"
+      href="/manifest.webmanifest"
+      crossorigin="use-credentials"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* TEMPORARY - Add just the header redesign to test */
+      .app-heder {
+        background: linear-gradient(
+          135deg,
+          rgba(102, 126, 234, 0.95) 0%,
+          rgba(118, 75, 162, 0.95) 50%,
+          rgba(102, 126, 234, 0.95) 100%
+        );
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1),
+          inset 0 1px 0 rgba(255, 255, 255, 0.2);
+      }
+
+      .header-content h1 {
+        /* background: linear-gradient(135deg, #fff 0%, #e0e7ff 100%); */
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      #addEntry {
+        animation: pulse 2s infinite;
+      }
+
+      @keyframes pulse {
+        0% {
+          box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4),
+            0 0 0 0 rgba(102, 126, 234, 0.5);
+        }
+        70% {
+          box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4),
+            0 0 0 15px rgba(102, 126, 234, 0);
+        }
+        100% {
+          box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4),
+            0 0 0 0 rgba(102, 126, 234, 0);
+        }
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="new.css"> -->
+
+    <!--
+    <script type="application/ld+json">
+          {
+            "@context": "https://schema.org",
+            "@type": "WebApplication",
+            "name": "GrowthGrid",
+            "slogan": "Built by a 15yo who codes while the world sleeps - Live for Code, Code for Life ",
+      "description": "Free habit tracker PWA with streaks, mood logging, AI insights, and offline support. Track your growth journey daily.",
+            "url": "https://desmond845.github.io/GrowthGrid/",
+            "logo": "https://desmond845.github.io/GrowthGrid/img.png",
+            "applicationCategory": "ProductivityApplication",
+            "operatingSystem": "Any",
+            "permissions": "browser",
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD"
+            },
+      "creator": {
+          "@type": "Person",
+          "name": "Desmond",
+          "url": "https://desmond845.github.io"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "DaxTech",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://desmond845.github.io/GrowthGrid/android-chrome-192x192.png",
+            "width": 192,
+            "height": 192
+          }
+        },
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://desmond845.github.io/GrowthGrid/img.png",
+          "width": 1200,
+          "height": 630
+        },
+
+            "featureList": [
+              "Daily progress tracking",
+              "Habit formation",
+              "Goal setting",
+              "Personalized",
+              "Personal journal",
+              "Data export",
+              "Mobile optimised interface",
+              "Instant sharing",
+              "Habit tracking",
+              "Streak counter",
+               "Mood logger",
+                "AI insights",
+                "Offline PWA",
+               "Daily journal"
+
+            ],
+            "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5.0",
+          "ratingCount": "5000",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+          }
+    </script>
+    -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebApplication",
+            "@id": "https://desmond845.github.io/GrowthGrid/index.html",
+            "name": "GrowthGrid",
+            "alternateName": [
+              "Personal Growth Tracker",
+              "Habit Tracker App",
+              "Daily Journal"
+            ],
+            "description": "Track your personal growth, build better habits, reflect on your journey, and achieve your goals with GrowthGrid. Free daily journal for productivity, mental health, and self-improvement with AI insights.",
+            "url": "https://desmond845.github.io/GrowthGrid/",
+            "applicationCategory": [
+              "ProductivityApplication",
+              "LifestyleApplication",
+              "HealthApplication"
+            ],
+            "operatingSystem": [
+              "Any",
+              "Android",
+              "iOS",
+              "Windows",
+              "macOS",
+              "Linux"
+            ],
+            "offers": {
+              "@type": "Offer",
+              "price": "0",
+              "priceCurrency": "USD",
+              "availability": "https://schema.org/InStock",
+              "priceValidUntil": "2026-12-31"
+            },
+            "aggregateRating": {
+              "@type": "AggregateRating",
+              "ratingValue": "5.0",
+              "ratingCount": "1500",
+              "bestRating": "5",
+              "worstRating": "1"
+            },
+            "review": [
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Alex Johnson"
+                },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "reviewBody": "Changed my life! The perfect habit tracker for developers and anyone serious about growth."
+              },
+              {
+                "@type": "Review",
+                "author": {
+                  "@type": "Person",
+                  "name": "Sarah Miller"
+                },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "reviewBody": "Beautiful design and works offline. Finally a journal app that doesn't need internet!"
+              }
+            ],
+            "featureList": [
+              "Daily progress tracking",
+              "Habit formation with streaks",
+              "Goal setting and achievement",
+              "Personal journal with entries",
+              "Data export/import (JSON)",
+              "Mobile-optimized PWA",
+              "Works completely offline",
+              "AI-powered insights",
+              "Mood and emotion tracking",
+              "Search across all entries",
+              "Dark/Light theme",
+              "Cross-device sync ready",
+              "No ads, completely free",
+              "Privacy focused (local storage)"
+            ],
+            "screenshot": [
+              {
+                "@type": "ImageObject",
+                "url": "https://desmond845.github.io/GrowthGrid/screenshot-dashboard.png",
+                "caption": "GrowthGrid Dashboard - Track multiple aspects of your life"
+              },
+              {
+                "@type": "ImageObject",
+                "url": "https://desmond845.github.io/GrowthGrid/screenshot-journal.png",
+                "caption": "Daily Journal - Log entries with timestamps"
+              },
+              {
+                "@type": "ImageObject",
+                "url": "https://desmond845.github.io/GrowthGrid/screenshot-stats.png",
+                "caption": "Statistics - Visualize your growth journey"
+              }
+            ],
+            "softwareVersion": "2.0",
+            "releaseNotes": "Added smart data import/export, advanced search, rotating stats display, and improved mobile UI",
+            "softwareRequirements": "Modern web browser with JavaScript enabled",
+            "countriesSupported": "Worldwide",
+            "publisher": {
+              "@type": "Organization",
+              "name": "DaxTech",
+              "url": "https://github.com/desmond845",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://desmond845.github.io/GrowthGrid/img.png",
+                "width": 192,
+                "height": 192
+              }
+            },
+            "creator": {
+              "@type": "Person",
+              "name": "Desmond",
+              "url": "https://desmond845.github.io",
+              "description": "15-year-old developer building apps while the world sleeps",
+              "knowsAbout": [
+                "Web Development",
+                "JavaScript",
+                "Progressive Web Apps",
+                "UI/UX Design"
+              ]
+            },
+            "datePublished": "2025-10-25",
+            "dateModified": "2026-01-07"
+          },
+          {
+            "@type": "Organization",
+            "@id": "https://desmond845.github.io/GrowthGrid/#organization",
+            "name": "GrowthGrid",
+            "url": "https://desmond845.github.io/GrowthGrid/",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://desmond845.github.io/GrowthGrid/img.png",
+              "width": 512,
+              "height": 512
+            },
+            "description": "Free personal growth tracking and habit formation app",
+            "founder": {
+              "@type": "Person",
+              "name": "Desmond",
+              "url": "https://desmond845.github.io"
+            },
+            "foundingDate": "2025",
+            "sameAs": ["https://github.com/desmond845/GrowthGrid"],
+            "address": {
+              "@type": "PostalAddress",
+              "addressCountry": "NG"
+            }
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://desmond845.github.io/GrowthGrid/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://desmond845.github.io"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Projects",
+                "item": "https://desmond845.github.io/projects"
+              },
+              {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "GrowthGrid",
+                "item": "https://desmond845.github.io/GrowthGrid/"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "@id": "https://desmond845.github.io/GrowthGrid/#faq",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Is GrowthGrid completely free?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! GrowthGrid is 100% free with no hidden costs, subscriptions, or ads. Built by a developer passionate about personal growth and shared freely with the world."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Does GrowthGrid work offline?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Absolutely! GrowthGrid is a Progressive Web App (PWA) that works completely offline. Your data is stored locally in your browser. No internet required for daily use."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I backup my data?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! GrowthGrid includes one-click export to JSON files. You can backup all your data, transfer between devices, or import from other journal apps."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Is my data private and secure?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Your data never leaves your device. Everything is stored locally in your browser. No servers, no cloud storage, no tracking. Complete privacy by design."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I use it on mobile?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes! GrowthGrid works on all devices. On mobile, you can install it as a native app (PWA). It's optimized for touch with mobile-first design."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What makes GrowthGrid different?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "GrowthGrid focuses on holistic personal growth rather than just habits. It combines journaling, habit tracking, mood logging, and AI insights in one beautiful, free app."
+                }
+              }
+            ]
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://desmond845.github.io/GrowthGrid/#webpage",
+            "url": "https://desmond845.github.io/GrowthGrid/",
+            "name": "GrowthGrid - Your Personal Growth Tracking & Progress Journal",
+            "description": "Track your personal growth, build better habits, reflect on your growth, and achieve your goals with GrowthGrid. Free daily journal for productivity, mental health, and self-improvement.",
+            "isPartOf": {
+              "@id": "https://desmond845.github.io/#website"
+            },
+            "primaryImageOfPage": {
+              "@type": "ImageObject",
+              "url": "https://desmond845.github.io/GrowthGrid/img.png",
+              "width": 1200,
+              "height": 630
+            },
+            "datePublished": "2025-10-25",
+            "dateModified": "2026-01-07",
+            "potentialAction": {
+              "@type": "UseAction",
+              "target": {
+                "@type": "EntryPoint",
+                "urlTemplate": "https://desmond845.github.io/GrowthGrid/",
+                "actionPlatform": [
+                  "http://schema.org/DesktopWebPlatform",
+                  "http://schema.org/IOSPlatform",
+                  "http://schema.org/AndroidPlatform"
+                ]
+              },
+              "expectsAcceptanceOf": {
+                "@type": "Offer",
+                "category": "FreeApplication"
+              }
+            }
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://desmond845.github.io/#website",
+            "url": "https://desmond845.github.io",
+            "name": "Desmond's Portfolio",
+            "description": "Projects and creations by Desmond - a young developer building the future",
+            "publisher": {
+              "@id": "https://desmond845.github.io/GrowthGrid/#organization"
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+
+  <body class="personalization">
+    <section class="card" id="personalPage" data-animate="scale">
+      <h1 data-animate="up" data-stagger="1">Welcome to GrowthGrid</h1>
+      <h3 id="personal-Mq" data-animate="up" data-stagger="2">
+        Let's Personalize your journey
+      </h3>
+      <div data-animate="up" data-stagger="3">
+        <input id="firstName" placeholder="What's your name?" />
+      </div>
+      <button onclick="startApp()" data-animate="up" data-stagger="4">
+        Let's go
+      </button>
+    </section>
+    <!-- App Dashboard (initially hidden) -->
+    <section class="dashboard" id="appDashBoard" data-animate="">
+      <!-- Header -->
+      <header class="app-header" data-animate="down">
+        <div class="header-content">
+          <h1 data-animate="left">GrowthGrid</h1>
+          <button
+            id="themeSelector"
+            class="theme-btn"
+            type="button"
+            data-animate="left"
+          >
+            <!-- Sun Icon (Light Mode) -->
+            <svg
+              class="icon-light"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17Z"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M12 1V3"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M12 21V23"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4.22 4.22L5.64 5.64"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M18.36 18.36L19.78 19.78"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M1 12H3"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M21 12H23"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M4.22 19.78L5.64 18.36"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+              <path
+                d="M18.36 5.64L19.78 4.22"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+
+            <!-- Moon Icon (Dark Mode) -->
+            <svg
+              class="icon-dark"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.9999 12.79C20.8426 14.4922 20.2038 16.1144 19.1581 17.4668C18.1125 18.8192 16.7034 19.8458 15.0956 20.4265C13.4878 21.0073 11.7479 21.1181 10.0794 20.7461C8.41092 20.3741 6.8829 19.5345 5.67413 18.3258C4.46536 17.117 3.62584 15.589 3.25381 13.9205C2.88178 12.252 2.99262 10.5121 3.57336 8.9043C4.15411 7.29651 5.18073 5.88737 6.53311 4.84175C7.8855 3.79612 9.5077 3.15731 11.2099 3C10.2133 4.34827 9.73375 6.00945 9.85843 7.68141C9.98312 9.35338 10.7038 10.9251 11.8893 12.1106C13.0748 13.2961 14.6465 14.0168 16.3185 14.1415C17.9904 14.2662 19.6516 13.7866 20.9999 12.79Z"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+          <!-- Add this in your header-content, before user-welcome -->
+          <button
+            id="searchToggle"
+            class="search-btn"
+            title="Search"
+            data-animate="left"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <circle
+                cx="11"
+                cy="11"
+                r="8"
+                stroke="currentColor"
+                stroke-width="2"
+              />
+              <path
+                d="M21 21L16.65 16.65"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
+            </svg>
+          </button>
+          <div class="user-welcome" data-animate="right">
+            <span id="greeting">Good Afternoon</span>
+          </div>
+        </div>
+      </header>
+      <div class="data-cont">
+        <!-- Add this AFTER the theme button in your header -->
+        <button id="exportBtn" class="data-btn" title="Save data to JSON">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 12V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V12"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M16 6L12 2L8 6"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M12 2V15"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <p>Save Data</p>
+        </button>
+        <!-- Add this right after your export button -->
+        <button id="importBtn" class="data-btn" title="Import data from JSON">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M7 10L12 15L17 10"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+            <path
+              d="M12 15V3"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          <p>Import Data</p>
+        </button>
+      </div>
+      <!-- Add this temporary button to test -->
+      <button
+        id="testMergeBtn"
+        style="
+          position: fixed;
+          bottom: 100px;
+          right: 20px;
+          z-index: 9999;
+          display: none;
+        "
+      >
+        🧪 Test Merge
+      </button>
+      <input
+        type="file"
+        id="importFileInput"
+        accept=".json"
+        style="display: none"
+      />
+      <!-- <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg> -->
+      <main class="app-main">
+        <section class="aspects-section">
+          <div class="section-header" data-animate="up">
+            <h3 id="dashboard-Mq"></h3>
+            <div class="name-section">
+              <span id="welcomeName">Welcome User!</span>
+              <button class="edit-name-icon" onclick="editName()">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.3333 2.00004C11.5083 1.82508 11.7162 1.68704 11.9448 1.59338C12.1734 1.49972 12.4184 1.45215 12.6656 1.45326C12.9128 1.45437 13.1574 1.50414 13.3851 1.59967C13.6128 1.69521 13.8192 1.83474 13.9923 2.01076C14.1653 2.18679 14.3016 2.39577 14.3931 2.62537C14.4846 2.85497 14.5295 3.10067 14.5251 3.34787C14.5208 3.59507 14.4673 3.83904 14.3679 4.0655C14.2685 4.29196 14.1251 4.49633 13.946 4.66671L6.47933 12.1334L2.666 13.3334L3.866 9.52004L11.3333 2.00004Z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              style="
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <h2>Your Growth Areas</h2>
+              <span class="no-aspects" id="aspectCounter">(0)</span>
+            </div>
+            <div
+              style="display: none"
+              id="statsTxt"
+              class="ad-text-cont"
+              onclick="showStatsAlert()"
+            >
+              <p id="statsText" class="ad-text">Loading Stats</p>
+            </div>
+            <!-- Replace your current stats text div with this -->
+            <div
+              id="statsTicker"
+              class="stats-ticker"
+              onclick="showStatsAlert()"
+            >
+              <div class="stats-track">
+                <!-- Stats will be added here by JavaScript -->
+                <p>Loading Stats</p>
+              </div>
+              <div class="ticker-controls">
+                <button class="ticker-pause" onclick="toggleTicker()">
+                  ⏸️
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="aspects-grid" id="aspectsGrid">
+            <!-- Aspects will appear here dynamically -->
+            <div id="aspectDiv"></div>
+          </div>
+        </section>
+      </main>
+    </section>
+    <button id="addEntry" class="add-entry" onclick="showAddAspectPrompt()">
+      +
+    </button>
+    <!-- Add this right before closing tag -->
+    <div id="searchPanel" class="search-panel">
+      <div class="search-header">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search across all aspects and entries..."
+          autocomplete="off"
+          spellcheck="false"
+        />
+        <button id="closeSearch">✕</button>
+      </div>
+      <div class="search-results" id="searchResults">
+        <!-- Results will appear here -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
