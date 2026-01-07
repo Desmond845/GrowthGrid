@@ -3,7 +3,7 @@
 // ===========================================
 
 // CHANGE THIS NUMBER EVERY TIME I UPDATE THE APP
-const APP_VERSION = "1.2.1";
+const APP_VERSION = "1.2";
 const CACHE_NAME = `growthgrid-${APP_VERSION}`;
 
 // ========== FILES TO CACHE ==========
